@@ -1,0 +1,191 @@
+* {
+  /* <uniquifier>: Use a unique and descriptive class name*/
+  /* <weight>: Use a value from 100 to 900 */
+  /* .noto-sans-kr-<uniquifier>  */
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: gray;
+  font-size: 14px;
+}
+
+#all {
+  width: 970px;
+  margin: 0 auto;
+}
+
+.img-round{
+  border-radius: 8px;
+}
+
+h1{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+  display: block;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+h2{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+/* 헤더 */
+
+header {
+  /* background-color: antiquewhite; */
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header--list01{
+  display: flex;
+  list-style: none;
+  margin: auto 28% auto 0;
+  padding: 0;
+}
+
+.header--text1 {
+  margin-right: 20px;
+  
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(97, 97, 97);
+}
+
+.header--list02{
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+.header--text02 {
+  margin: auto 8px;
+  color: rgb(58, 58, 58);
+} 
+
+
+#headerbutton {
+  background-color: #00c7ae;
+  padding: 7px 14px;
+  border-radius: 6px 6px;
+
+  color: white;
+  font-weight: 600;
+}
+
+/*  */
+
+#searchmain {
+  /* background-color: bisque; */
+  height: 200px;
+}
+
+
+.searchmain-search{
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  width: 540px;
+  height: 35px;
+  display: flex;
+}
+
+.search-list{
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  */
+.hot-service-list{
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+/*  */
+.gosu-portfolio{
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+/*  */
+
+footer {
+  /* background-color: aliceblue; */
+  height: 350px;
+  margin: 10px 16px;
+}
+.footerbutton {
+  margin: 22px 10px 0 0;
+  padding: 6px 22px;
+
+  background-color: #00c7ae;
+  border-radius: 22px 22px;
+}
+
+.footerbutton-text{
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  /* padding-bottom: 10px; */
+  /* line-height: 40px; */
+  text-align: center;
+}
+
+#footer-company {
+  font-size: 12px;
+}
+
+#footer-sns{
+  margin: auto 0;
+}
+
+.footer-terms {
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* 디자인 블록 */
+
+b {
+  font-weight: 600;
+}
+
+.listnone {
+  list-style-type: none;
+}
+
+
+.listcol {
+  /* background-color: #00C7AE; */
+  display: flex;
+  width: 200px;
+}
+.col {
+  display: flex;
+}
+
+.coljust {
+  display: flex;
+  justify-content: space-between;
+}
+
+.point {
+  margin: 15px 0 5px 0;
+  color: #00c7ae;
+  font-weight: 500;
+  font-size: 20px;
+}
