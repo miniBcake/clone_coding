@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>숨고:카피연습</title>
     <!-- 한지윤 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./copy.css" />
   </head>
   <body>
     <!-- 헤더 -->
     <header>
-      <a href=""
-        ><img
-          src="./숨고 소스/숨고로고.svg"
-          alt="숨고"
-          style="margin: 16px 10px"
-          width="80px"
-      /></a>
-      <ul class="header--list01">
-        <a href=""><li class="header--text1">견적요청</li></a>
-        <a href=""><li class="header--text1">고수찾기</li></a>
-        <a href=""><li class="header--text1">마켓</li></a>
-        <a href=""><li class="header--text1">커뮤니티</li></a>
-      </ul>
+      <section class="header-section">
+        <a href=""
+          ><img
+            src="./숨고 소스/숨고로고.svg"
+            alt="숨고"
+            style="margin: 15px 20px 0 0"
+            width="80px"
+        /></a>
+        <ul class="header--list01">
+          <a href=""><li class="header--text1">견적요청</li></a>
+          <a href=""><li class="header--text1">고수찾기</li></a>
+          <a href=""><li class="header--text1">마켓</li></a>
+          <a href=""><li class="header--text1">커뮤니티</li></a>
+        </ul>
+      </section>
       <ul class="header--list02">
         <a href=""><li class="header--text02">로그인</li></a>
         <a href=""><li class="header--text02">회원가입</li></a>
@@ -67,19 +72,25 @@
           >
           <a href=""
             ><li class="search-list-li">
-              <img src="./숨고 소스/설치수리.svg" alt="전체보기" width="30px" />
+              <img src="./숨고 소스/이사청소.svg" alt="이사청소" width="30px" />
+              <div class="search-catagory-text">이사/청소</div>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
+              <img src="./숨고 소스/설치수리.svg" alt="설치수리" width="30px" />
               <div class="search-catagory-text">설치/수리</div>
             </li></a
           >
           <a href=""
             ><li class="search-list-li">
-              <img src="./숨고 소스/인테리어.svg" alt="전체보기" width="30px" />
+              <img src="./숨고 소스/인테리어.svg" alt="인테리어" width="30px" />
               <div class="search-catagory-text">인테리어</div>
             </li></a
           >
           <a href=""
             ><li class="search-list-li">
-              <img src="./숨고 소스/외주.svg" alt="전체보기" width="30px" />
+              <img src="./숨고 소스/외주.svg" alt="외주" width="30px" />
               <div class="search-catagory-text">외주</div>
             </li></a
           >
@@ -87,7 +98,7 @@
             ><li class="search-list-li">
               <img
                 src="./숨고 소스/이벤트뷰티.svg"
-                alt="전체보기"
+                alt="이벤트뷰티"
                 width="30px"
               />
               <div class="search-catagory-text">이벤트/뷰티</div>
@@ -95,13 +106,13 @@
           >
           <a href=""
             ><li class="search-list-li">
-              <img src="./숨고 소스/취업직무.svg" alt="전체보기" width="30px" />
+              <img src="./숨고 소스/취업직무.svg" alt="취업직무" width="30px" />
               <div class="search-catagory-text">취업/직무</div>
             </li></a
           >
           <a href=""
             ><li class="search-list-li">
-              <img src="./숨고 소스/과외.svg" alt="전체보기" width="30px" />
+              <img src="./숨고 소스/과외.svg" alt="과외" width="30px" />
               <div class="search-catagory-text">과외</div>
             </li></a
           >
@@ -109,7 +120,7 @@
             ><li class="search-list-li">
               <img
                 src="./숨고 소스/취미자기계발.svg"
-                alt="전체보기"
+                alt="취미"
                 width="30px"
               />
               <div class="search-catagory-text">취미/자기계발</div>
@@ -117,19 +128,19 @@
           >
           <a href=""
             ><li class="search-list-li">
-              <img src="./숨고 소스/자동차.svg" alt="전체보기" width="30px" />
+              <img src="./숨고 소스/자동차.svg" alt="자동차" width="30px" />
               <div class="search-catagory-text">자동차</div>
             </li></a
           >
           <a href=""
             ><li class="search-list-li">
-              <img src="./숨고 소스/법률금융.svg" alt="전체보기" width="30px" />
+              <img src="./숨고 소스/법률금융.svg" alt="법률" width="30px" />
               <div class="search-catagory-text">법률/금융</div>
             </li></a
           >
           <a href=""
             ><li class="search-list-li">
-              <img src="./숨고 소스/기타.svg" alt="전체보기" width="30px" />
+              <img src="./숨고 소스/기타.svg" alt="기타" width="30px" />
               <div class="search-catagory-text">기타</div>
             </li></a
           >
@@ -138,8 +149,8 @@
 
       <!--  -->
       <div id="main-banner"></div>
-      <img src="./숨고 소스/화살표오른쪽.svg" alt="화살표오른쪽" />
-      <img src="./숨고 소스/화살표왼쪽.svg" alt="화살표왼쪽" />
+      <!-- <img src="./숨고 소스/화살표오른쪽.svg" alt="화살표오른쪽" />
+      <img src="./숨고 소스/화살표왼쪽.svg" alt="화살표왼쪽" /> -->
       <div>
         <!-- 배너이미지 -->
         <img src="./숨고 소스/배너_40쿠폰.png" alt="배너1" />
@@ -148,42 +159,90 @@
       <!--  -->
       <div id="hot-service">
         <h2>숨고 인기 서비스</h2>
-        <img src="./숨고 소스/화살표오른쪽.svg" alt="화살표오른쪽" />
-        <img src="./숨고 소스/화살표왼쪽.svg" alt="화살표왼쪽" />
+        <!-- <img src="./숨고 소스/화살표오른쪽.svg" alt="화살표오른쪽" />
+        <img src="./숨고 소스/화살표왼쪽.svg" alt="화살표왼쪽" /> -->
         <ul class="hot-service-list">
           <!-- 게시물 -->
-          <li>
-            <img
-              class="img-round"
-              src="./숨고 소스/숨고인기서비스1.png"
-              alt="게시물1"
-              width="228px"
-            />
-          </li>
-          <li>
-            <img
-              class="img-round"
-              src="./숨고 소스/숨고인기서비스2.png"
-              alt="게시물2"
-              width="228px"
-            />
-          </li>
-          <li>
-            <img
-              class="img-round"
-              src="./숨고 소스/숨고인기서비스3.png"
-              alt="게시물3"
-              width="228px"
-            />
-          </li>
-          <li>
-            <img
-              class="img-round"
-              src="./숨고 소스/숨고인기서비스4.png"
-              alt="게시물4"
-              width="228px"
-            />
-          </li>
+          <a href=""
+            ><li>
+              <img
+                class="img-round"
+                src="./숨고 소스/숨고인기서비스1.png"
+                alt="게시물1"
+                width="228px"
+              />
+              <div class="hot-text">피아노/키보드레슨</div>
+              <div class="hot-text-small">
+                <img
+                  src="./숨고 소스/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>240,840명 요청</span>
+              </div>
+            </li></a
+          >
+          <a href=""
+            ><li>
+              <img
+                class="img-round"
+                src="./숨고 소스/숨고인기서비스2.png"
+                alt="게시물2"
+                width="228px"
+              />
+              <div class="hot-text">골프 레슨</div>
+              <div class="hot-text-small">
+                <img
+                  src="./숨고 소스/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>368,893명 요청</span>
+              </div>
+            </li></a
+          >
+          <a href=""
+            ><li>
+              <img
+                class="img-round"
+                src="./숨고 소스/숨고인기서비스3.png"
+                alt="게시물3"
+                width="228px"
+              />
+              <div class="hot-text">퍼스널트레이닝(PT)</div>
+              <div class="hot-text-small">
+                <img
+                  src="./숨고 소스/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>669,676명 요청</span>
+              </div>
+            </li></a
+          >
+          <a href=""
+            ><li>
+              <img
+                class="img-round"
+                src="./숨고 소스/숨고인기서비스4.png"
+                alt="게시물4"
+                width="228px"
+              />
+              <div class="hot-text">보컬 레슨</div>
+              <div class="hot-text-small">
+                <img
+                  src="./숨고 소스/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>454,561명 요청</span>
+              </div>
+            </li></a
+          >
         </ul>
       </div>
       <!--  -->
@@ -193,6 +252,8 @@
       <!--  -->
       <div id="gosu-portfolio">
         <h2>숨은고수 포트폴리오</h2>
+        <!-- 이거 사진에 라운드 줘서 하는게 아니라 라운드 된 틀 만들어두고 틀 외의 부분 숨기고
+        틀에 글씨랑 그라데이션 이미지 겹치는 건가봐,,,, -->
         <ul class="gosu-portfolio-list">
           <li>
             <img
@@ -201,6 +262,15 @@
               alt="게시물1"
               width="228px"
             />
+            <div class="gosu-port-text">
+              <img
+                src="./숨고 소스/숨고_포폴_1.png"
+                alt="유저프로필사진"
+                width="20px"
+                style="margin-right: 6px"
+              />
+              <span style="font-size: 12px">남서연</span>
+            </div>
           </li>
           <li>
             <img
@@ -209,6 +279,15 @@
               alt="게시물2"
               width="228px"
             />
+            <div class="gosu-port-text">
+              <img
+                src="./숨고 소스/숨고_포폴_2.png"
+                alt="유저프로필사진"
+                width="20px"
+                style="margin-right: 6px"
+              />
+              <span style="font-size: 12px">써니</span>
+            </div>
           </li>
           <li>
             <img
@@ -217,6 +296,15 @@
               alt="게시물3"
               width="228px"
             />
+            <div class="gosu-port-text">
+              <img
+                src="./숨고 소스/숨고_포폴_3.png"
+                alt="유저프로필사진"
+                width="20px"
+                style="margin-right: 6px"
+              />
+              <span style="font-size: 12px">이원비</span>
+            </div>
           </li>
           <li>
             <img
@@ -225,6 +313,15 @@
               alt="게시물4"
               width="228px"
             />
+            <div class="gosu-port-text">
+              <img
+                src="./숨고 소스/숨고_포폴_4.png"
+                alt="유저프로필사진"
+                width="20px"
+                style="margin-right: 6px"
+              />
+              <span style="font-size: 12px">삐까번쩍홈케어</span>
+            </div>
           </li>
         </ul>
       </div>
@@ -264,17 +361,13 @@
 
         <div class="footer-list-container">
           <ul class="footer-list">
-            <a href=""
-              ><li><b>숨고소개</b></li></a
-            >
+            <a href=""><li><b>숨고소개</b></li></a>
             <a href=""><li>회사소개</li></a>
             <a href=""><li>채용안내</li></a>
             <a href=""><li>팀블로그</li></a>
           </ul>
           <ul class="footer-list">
-            <a href=""
-              ><li><b>고객안내</b></li></a
-            >
+            <a href=""><li><b>고객안내</b></li></a>
             <a href=""><li>이용안내</li></a>
             <a href=""><li>안전정책</li></a>
             <a href=""><li>예상금액</li></a>
@@ -283,9 +376,7 @@
             <a href=""><li>고수에게묻다</li></a>
           </ul>
           <ul class="footer-list">
-            <a href=""
-              ><li><b>고수안내</b></li></a
-            >
+            <a href=""><li><b>고수안내</b></li></a>
             <a href=""><li>이용안내</li></a>
             <a href=""><li>고수가이드</li></a>
             <a href=""><li>고수가입</li></a>
@@ -304,7 +395,7 @@
 
       <div class="coljust">
         <div id="footer-company">
-          <div class="col listnone">
+          <div class="footer-company-list">
             <a href=""><div class="footer-terms">이용약관</div></a>
             <a href=""><div class="footer-terms">개인정보처리방침</div></a>
             <a href=""
@@ -312,12 +403,12 @@
             >
             <a href=""><div class="footer-terms">사업자 정보확인</div></a>
           </div>
-          <p style="font-size: 12px">
+          <p class="footer-text-caution">
             (주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며
             개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한<br />
             의무와 책임은 거래당사자에게 있습니다.
           </p>
-          <p style="font-size: 12px">
+          <p class="footer-text-caution">
             상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H ·
             개인정보책임관리자:김태우 · 주소:서울특별시 강남구 테헤란로 415, L7
             강남타워 5층<br />

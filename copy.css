@@ -1,6 +1,6 @@
 * {
   /* 한지윤 */
-  
+
   /* <uniquifier>: Use a unique and descriptive class name*/
   /* <weight>: Use a value from 100 to 900 */
   /* .noto-sans-kr-<uniquifier>  */
@@ -8,15 +8,18 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  color: gray;
+  color: #737373;
   font-size: 14px;
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
 }
 
-.img-round{
+.img-round {
   border-radius: 8px;
 }
 
-h1{
+h1 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -26,18 +29,27 @@ h1{
   margin-bottom: 35px;
 }
 
-h2{
+h2 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 24px;
   font-weight: 600;
   color: black;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
+li{
+  margin-bottom: 5px;
+}
+
 /* 헤더 */
+header{
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
 
 header {
   /* background-color: antiquewhite; */
@@ -50,32 +62,36 @@ header {
   margin-bottom: 50px;
 }
 
-.header--list01{
+.header-section{
   display: flex;
-  list-style: none;
-  margin: auto 28% auto 0;
-  padding: 0;
+  width: auto;
 }
 
-.header--text1 {
-  margin-right: 20px;
-  
-  font-size: 16px;
-  font-weight: 500;
-  color: rgb(97, 97, 97);
-}
-
-.header--list02{
+.header--list01 {
   display: flex;
   list-style: none;
   margin: auto 0;
 }
 
+.header--text1 {
+  margin: 0 10px;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(97, 97, 97);
+}
+
+.header--list02 {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+  align-items: center;
+}
+
 .header--text02 {
   margin: auto 8px;
   color: rgb(58, 58, 58);
-} 
-
+}
 
 #headerbutton {
   background-color: #00c7ae;
@@ -83,11 +99,11 @@ header {
   border-radius: 6px 6px;
 
   color: white;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /*  */
-main{
+main {
   width: 970px;
   margin: 0 auto;
 }
@@ -96,11 +112,10 @@ main{
   /* background-color: rgb(248, 244, 238); */
 
   height: 200px;
-  margin-bottom: 40px;
+  margin-bottom: 76px;
 }
 
-
-#searchmain-search{
+#searchmain-search {
   background-color: #f2f2f2;
   border-radius: 6px;
   border: 0;
@@ -111,96 +126,116 @@ main{
   justify-content: space-around;
 }
 
-#search{
-  background-color : rgb(255,255,255,0);
+#search {
+  background-color: rgb(255, 255, 255, 0);
   border: 0;
   width: 500px;
 }
 
-.search-list{
+.search-list {
   margin-top: 25px;
-  padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.search-list-li{
+.search-list-li {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /*  */
-#hot-service{
+#hot-service {
   /* background-color: beige; */
 
   height: 300px;
   margin-top: 90px;
 }
 
-.hot-service-list{
-  padding: 0;
+.hot-service-list {
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
+
+.hot-text{
+  color: #323232;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.hot-text-small{
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+}
+
 /*  */
-#communicatin{
+#communicatin {
   /* background-color: rgb(255, 246, 232); */
 
   height: 400px;
 }
 
 /*  */
-#gosu-portfolio{
+#gosu-portfolio {
   /* background-color: rgb(245, 237, 237); */
 
   height: 400px;
 }
 
-.gosu-portfolio-list{
-  padding: 0;
+.gosu-portfolio-list {
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
 
+.gosu-port-text{
+  font-size: 12px;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+}
+
 /*  */
 
-hr{
+hr {
   border: 1px 0 0 0 solid rgb(236, 236, 236);
 }
 
 footer {
   /* background-color: aliceblue; */
 
-  width: 950px;
-  margin: auto;
-  height: 350px;
+  width: 970px;
+  margin: 5px auto;
+  height: 400px;
   /* margin: 10px 14px; */
 }
 
-.footer-first{
+.footer-first {
   display: flex;
   justify-content: space-between;
 }
 
 .footerbutton {
-  margin: 22px 10px 0 0;
-  padding: 6px 22px;
+  margin: 30px 10px 0 0;
+  padding: 8px 10px;
+  width: 110px;
 
   background-color: #00c7ae;
   border-radius: 22px 22px;
-}
 
-.footerbutton-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footerbutton-text {
   font-weight: 500;
   font-size: 12px;
   color: white;
-  /* padding-bottom: 10px; */
-  /* line-height: 40px; */
+  margin: 0 8px;
   text-align: center;
 }
 
@@ -208,36 +243,52 @@ footer {
   font-size: 12px;
 }
 
-#footer-sns{
+.footer-company-list {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+#footer-sns {
+  width: 200px;
   margin: auto 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-terms {
   margin-right: 30px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
 }
 
-.footer-list-container{
-  margin-left: 200px;
+.footer-list-container {
+  margin: 20px 0 0 200px ;
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
-  width: 450px;
+  width: 400px;
   /* background-color: #00c7ae; */
 }
 
-.footer-list{
-  padding: 0;
+.footer-list {
   list-style-type: none;
 }
 
+.point {
+  margin: 15px 0 5px 0;
+  color: #00c7ae;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer-text-caution{
+  font-size: 12px;
+  margin-bottom: 5px;
+}
 
 
-
-
-
-/* 디자인 블록 */
+/* 임시 블록 */
 
 b {
   font-weight: 600;
@@ -246,7 +297,6 @@ b {
 .listnone {
   list-style-type: none;
 }
-
 
 .listcol {
   /* background-color: #00C7AE; */
@@ -262,9 +312,3 @@ b {
   justify-content: space-between;
 }
 
-.point {
-  margin: 15px 0 5px 0;
-  color: #00c7ae;
-  font-weight: 500;
-  font-size: 20px;
-}
