@@ -1,4 +1,6 @@
 * {
+  /* 한지윤 */
+  
   /* <uniquifier>: Use a unique and descriptive class name*/
   /* <weight>: Use a value from 100 to 900 */
   /* .noto-sans-kr-<uniquifier>  */
@@ -8,11 +10,6 @@
   font-style: normal;
   color: gray;
   font-size: 14px;
-}
-
-#all {
-  width: 970px;
-  margin: 0 auto;
 }
 
 .img-round{
@@ -35,13 +32,22 @@ h2{
   font-weight: 600;
   color: black;
 }
+
+a{
+  text-decoration: none;
+}
+
 /* 헤더 */
 
 header {
   /* background-color: antiquewhite; */
+
+  width: 970px;
+  margin: 0 auto;
   height: 60px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .header--list01{
@@ -81,19 +87,34 @@ header {
 }
 
 /*  */
+main{
+  width: 970px;
+  margin: 0 auto;
+}
 
 #searchmain {
-  /* background-color: bisque; */
+  /* background-color: rgb(248, 244, 238); */
+
   height: 200px;
+  margin-bottom: 40px;
 }
 
 
-.searchmain-search{
-  background-color: rgb(241, 241, 241);
-  border-radius: 5px;
+#searchmain-search{
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  border: 0;
   width: 540px;
-  height: 35px;
+  height: 40px;
   display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+#search{
+  background-color : rgb(255,255,255,0);
+  border: 0;
+  width: 500px;
 }
 
 .search-list{
@@ -102,18 +123,44 @@ header {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.search-list-li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*  */
+#hot-service{
+  /* background-color: beige; */
+
+  height: 300px;
+  margin-top: 90px;
+}
+
 .hot-service-list{
   padding: 0;
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
+/*  */
+#communicatin{
+  /* background-color: rgb(255, 246, 232); */
+
+  height: 400px;
+}
 
 /*  */
-.gosu-portfolio{
+#gosu-portfolio{
+  /* background-color: rgb(245, 237, 237); */
+
+  height: 400px;
+}
+
+.gosu-portfolio-list{
   padding: 0;
   display: flex;
   list-style: none;
@@ -122,11 +169,24 @@ header {
 
 /*  */
 
+hr{
+  border: 1px 0 0 0 solid rgb(236, 236, 236);
+}
+
 footer {
   /* background-color: aliceblue; */
+
+  width: 950px;
+  margin: auto;
   height: 350px;
-  margin: 10px 16px;
+  /* margin: 10px 14px; */
 }
+
+.footer-first{
+  display: flex;
+  justify-content: space-between;
+}
+
 .footerbutton {
   margin: 22px 10px 0 0;
   padding: 6px 22px;
@@ -157,6 +217,25 @@ footer {
   font-weight: 600;
   font-size: 12px;
 }
+
+.footer-list-container{
+  margin-left: 200px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 450px;
+  /* background-color: #00c7ae; */
+}
+
+.footer-list{
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+
+
 
 /* 디자인 블록 */
 

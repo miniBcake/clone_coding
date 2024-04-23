@@ -8,247 +8,351 @@
     <link rel="stylesheet" href="./copy.css" />
   </head>
   <body>
-    <div id="all">
-      <!-- 헤더 -->
-      <header>
-        <a
-          ><img
-            src="./숨고 소스/숨고로고.svg"
-            alt="숨고"
-            style="margin: 16px 10px"
-            width="80px"
-        /></a>
-        <ul class="header--list01">
-          <li class="header--text1">견적요청</li>
-          <li class="header--text1">고수찾기</li>
-          <li class="header--text1">마켓</li>
-          <li class="header--text1">커뮤니티</li>
-        </ul>
-        <ul class="header--list02">
-          <li class="header--text02">로그인</li>
-          <li class="header--text02">회원가입</li>
-          <li class="header--text02" id="headerbutton">고수가입</li>
-        </ul>
-      </header>
+    <!-- 헤더 -->
+    <header>
+      <a href=""
+        ><img
+          src="./숨고 소스/숨고로고.svg"
+          alt="숨고"
+          style="margin: 16px 10px"
+          width="80px"
+      /></a>
+      <ul class="header--list01">
+        <a href=""><li class="header--text1">견적요청</li></a>
+        <a href=""><li class="header--text1">고수찾기</li></a>
+        <a href=""><li class="header--text1">마켓</li></a>
+        <a href=""><li class="header--text1">커뮤니티</li></a>
+      </ul>
+      <ul class="header--list02">
+        <a href=""><li class="header--text02">로그인</li></a>
+        <a href=""><li class="header--text02">회원가입</li></a>
+        <a href=""
+          ><li class="header--text02" id="headerbutton">고수가입</li></a
+        >
+      </ul>
+    </header>
 
-      <!-- 메인 -->
-      <main>
-        <div id="searchmain">
-          <h1>1,000가지 생활 서비스를 단 한 곳에서</h1>
-          <div class="searchmain-search">
+    <!-- 메인 -->
+    <main>
+      <div id="searchmain">
+        <h1>1,000가지 생활 서비스를 단 한 곳에서</h1>
+        <div id="searchmain-search">
+          <img
+            src="./숨고 소스/검색용 돋보기.svg"
+            alt="돋보기"
+            width="20px"
+            style="margin: 0 10px"
+          />
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="어떤 서비스가 필요하세요?"
+          />
+        </div>
+        <!-- <div class="searchmain-search">
             <img
               src="./숨고 소스/검색용 돋보기.svg"
               alt="돋보기"
               width="20px"
             />
             <div>어떤 서비스가 필요하세요?</div>
-          </div>
-          <ul class="search-list">
-            <li>
+          </div> -->
+        <ul class="search-list">
+          <a href=""
+            ><li class="search-list-li">
               <img src="./숨고 소스/전체보기.svg" alt="전체보기" width="30px" />
               <div class="search-catagory-text">전체</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img src="./숨고 소스/설치수리.svg" alt="전체보기" width="30px" />
               <div class="search-catagory-text">설치/수리</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img src="./숨고 소스/인테리어.svg" alt="전체보기" width="30px" />
               <div class="search-catagory-text">인테리어</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img src="./숨고 소스/외주.svg" alt="전체보기" width="30px" />
               <div class="search-catagory-text">외주</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img
                 src="./숨고 소스/이벤트뷰티.svg"
                 alt="전체보기"
                 width="30px"
               />
               <div class="search-catagory-text">이벤트/뷰티</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img src="./숨고 소스/취업직무.svg" alt="전체보기" width="30px" />
               <div class="search-catagory-text">취업/직무</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img src="./숨고 소스/과외.svg" alt="전체보기" width="30px" />
               <div class="search-catagory-text">과외</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img
                 src="./숨고 소스/취미자기계발.svg"
                 alt="전체보기"
                 width="30px"
               />
               <div class="search-catagory-text">취미/자기계발</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img src="./숨고 소스/자동차.svg" alt="전체보기" width="30px" />
               <div class="search-catagory-text">자동차</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img src="./숨고 소스/법률금융.svg" alt="전체보기" width="30px" />
               <div class="search-catagory-text">법률/금융</div>
-            </li>
-            <li>
+            </li></a
+          >
+          <a href=""
+            ><li class="search-list-li">
               <img src="./숨고 소스/기타.svg" alt="전체보기" width="30px" />
               <div class="search-catagory-text">기타</div>
-            </li>
-          </ul>
-        </div>
+            </li></a
+          >
+        </ul>
+      </div>
 
-        <!--  -->
-        <div id="main-banner"></div>
+      <!--  -->
+      <div id="main-banner"></div>
+      <img src="./숨고 소스/화살표오른쪽.svg" alt="화살표오른쪽" />
+      <img src="./숨고 소스/화살표왼쪽.svg" alt="화살표왼쪽" />
+      <div>
+        <!-- 배너이미지 -->
+        <img src="./숨고 소스/배너_40쿠폰.png" alt="배너1" />
+      </div>
+
+      <!--  -->
+      <div id="hot-service">
+        <h2>숨고 인기 서비스</h2>
         <img src="./숨고 소스/화살표오른쪽.svg" alt="화살표오른쪽" />
         <img src="./숨고 소스/화살표왼쪽.svg" alt="화살표왼쪽" />
-        <div>
-          <!-- 배너이미지 -->
-          <img src="./숨고 소스/배너_40쿠폰.png" alt="배너1" />
-        </div>
+        <ul class="hot-service-list">
+          <!-- 게시물 -->
+          <li>
+            <img
+              class="img-round"
+              src="./숨고 소스/숨고인기서비스1.png"
+              alt="게시물1"
+              width="228px"
+            />
+          </li>
+          <li>
+            <img
+              class="img-round"
+              src="./숨고 소스/숨고인기서비스2.png"
+              alt="게시물2"
+              width="228px"
+            />
+          </li>
+          <li>
+            <img
+              class="img-round"
+              src="./숨고 소스/숨고인기서비스3.png"
+              alt="게시물3"
+              width="228px"
+            />
+          </li>
+          <li>
+            <img
+              class="img-round"
+              src="./숨고 소스/숨고인기서비스4.png"
+              alt="게시물4"
+              width="228px"
+            />
+          </li>
+        </ul>
+      </div>
+      <!--  -->
+      <div id="communicatin">
+        <h2>숨고 커뮤니티에 물어보세요</h2>
+      </div>
+      <!--  -->
+      <div id="gosu-portfolio">
+        <h2>숨은고수 포트폴리오</h2>
+        <ul class="gosu-portfolio-list">
+          <li>
+            <img
+              class="img-round"
+              src="./숨고 소스/숨은고수1.webp"
+              alt="게시물1"
+              width="228px"
+            />
+          </li>
+          <li>
+            <img
+              class="img-round"
+              src="./숨고 소스/숨은고수2.webp"
+              alt="게시물2"
+              width="228px"
+            />
+          </li>
+          <li>
+            <img
+              class="img-round"
+              src="./숨고 소스/숨은고수3.webp"
+              alt="게시물3"
+              width="228px"
+            />
+          </li>
+          <li>
+            <img
+              class="img-round"
+              src="./숨고 소스/숨은고수4.webp"
+              alt="게시물4"
+              width="228px"
+            />
+          </li>
+        </ul>
+      </div>
+    </main>
 
-        <!--  -->
-        <div class="hot-service">
-          <h2>숨고 인기 서비스</h2>
-          <img src="./숨고 소스/화살표오른쪽.svg" alt="화살표오른쪽" />
-          <img src="./숨고 소스/화살표왼쪽.svg" alt="화살표왼쪽" />
-          <ul class="hot-service-list">
-            <!-- 게시물 -->
-            <img class="img-round" src="./숨고 소스/숨고인기서비스1.png" alt="게시물1" width="228px">
-            <img class="img-round" src="./숨고 소스/숨고인기서비스2.png" alt="게시물2" width="228px">
-            <img class="img-round" src="./숨고 소스/숨고인기서비스3.png" alt="게시물3" width="228px">
-            <img class="img-round" src="./숨고 소스/숨고인기서비스4.png" alt="게시물4" width="228px">
-          </ul>
-        </div>
-        <!--  -->
-        <div id="communicatin">
-          <h2>숨고 커뮤니티에 물어보세요</h2>
-        </div>
-        <!--  -->
-        <div id="gosu-portfolio">
-          <h2>숨은고수 포트폴리오</h2>
-          <img class="img-round" src="./숨고 소스/숨은고수1.webp" alt="게시물1" width="228px">
-            <img class="img-round" src="./숨고 소스/숨은고수2.webp" alt="게시물2" width="228px">
-            <img class="img-round" src="./숨고 소스/숨은고수3.webp" alt="게시물3" width="228px">
-            <img class="img-round" src="./숨고 소스/숨은고수4.webp" alt="게시물4" width="228px">
-        </div>
-
-      </main>
-
-      <!-- 푸터 -->
-      <hr />
-      <footer>
-        <div class="coljust">
-          <div id="footer-1599-5319">
-            <p class="point">1599-5319</p>
-            <div>
-              평일 10:00 - 18:00<br />(점심시간 13:00 - 14:00 제외·주말/공휴일
-              제외)
-              <div class="col">
-                <div class="footerbutton">
+    <!-- 푸터 -->
+    <hr />
+    <footer>
+      <div class="footer-first">
+        <div id="footer-1599-5319">
+          <p class="point">1599-5319</p>
+          <div>
+            평일 10:00 - 18:00<br />(점심시간 13:00 - 14:00 제외·주말/공휴일
+            제외)
+            <div class="col">
+              <a href=""
+                ><div class="footerbutton">
                   <img
                     src="./숨고 소스/icon-download-appstore.svg"
                     alt="애플스토어"
                   />
                   <span class="footerbutton-text">APP STORE</span>
-                </div>
-                <div class="footerbutton">
+                </div></a
+              >
+              <a href=""
+                ><div class="footerbutton">
                   <img
                     src="./숨고 소스/icon-download-palystore.svg"
                     alt="플레이스토어"
                   />
                   <span class="footerbutton-text">PLAY STORE</span>
-                </div>
-              </div>
+                </div></a
+              >
             </div>
           </div>
-
-          <div class="listcol"></div>
-          <ul class="listnone">
-            <li><b>숨고소개</b></li>
-            <li>회사소개</li>
-            <li>채용안내</li>
-            <li>팀블로그</li>
-          </ul>
-          <ul class="listnone">
-            <li><b>고객안내</b></li>
-            <li>이용안내</li>
-            <li>안전정책</li>
-            <li>예상금액</li>
-            <li>고수찾기</li>
-            <li>숨고보증</li>
-            <li>고수에게묻다</li>
-          </ul>
-          <ul class="listnone">
-            <li><b>고수안내</b></li>
-            <li>이용안내</li>
-            <li>고수가이드</li>
-            <li>고수가입</li>
-          </ul>
-          <ul class="listnone">
-            <li><b>고객센터</b></li>
-            <li>공지사항</li>
-            <li>자주묻는질문</li>
-          </ul>
         </div>
 
-        <br />
-
-        <div class="coljust">
-          <div id="footer-company">
-            <div class="col listnone">
-              <a><div class="footer-terms">이용약관</div></a>
-              <a><div class="footer-terms">개인정보처리방침</div></a>
-              <a><div class="footer-terms">위치기반 서비스 이용약관</div></a>
-              <a><div class="footer-terms">사업자 정보확인</div></a>
-            </div>
-            <p style="font-size: 12px">
-              (주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며
-              개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한<br />
-              의무와 책임은 거래당사자에게 있습니다.
-            </p>
-            <p style="font-size: 12px">
-              상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H ·
-              개인정보책임관리자:김태우 · 주소:서울특별시 강남구 테헤란로 415,
-              L7 강남타워 5층<br />
-              사업자등록번호:120-88-22325 · 통신판매업신고증:제
-              2021-서울강남-00551 호 · 직업정보제공사업 신고번호:서울청 제
-              2019-21호<br />
-              고객센터:1599-5319 · 이메일:support@soomgo.com<br />
-              Copyright ©Brave Mobile Inc. All Rights Reserved.
-            </p>
-          </div>
-
-          <div id="footer-sns">
-            <a
-              ><img
-                src="./숨고 소스/icon-footer-sns-facebook.svg"
-                alt="페이스북"
-            /></a>
-            <a
-              ><img
-                src="./숨고 소스/icon-footer-sns-instagram.svg"
-                alt="인스타그램"
-            /></a>
-            <a
-              ><img
-                src="./숨고 소스/icon-footer-sns-naverblog.svg"
-                alt="네이버블로그"
-            /></a>
-            <a
-              ><img
-                src="./숨고 소스/icon-footer-sns-naverpost.svg"
-                alt="네이버포스트"
-            /></a>
-            <a
-              ><img
-                src="./숨고 소스/icon-footer-sns-tistory.svg"
-                alt="티스토리"
-            /></a>
-          </div>
+        <div class="footer-list-container">
+          <ul class="footer-list">
+            <a href=""
+              ><li><b>숨고소개</b></li></a
+            >
+            <a href=""><li>회사소개</li></a>
+            <a href=""><li>채용안내</li></a>
+            <a href=""><li>팀블로그</li></a>
+          </ul>
+          <ul class="footer-list">
+            <a href=""
+              ><li><b>고객안내</b></li></a
+            >
+            <a href=""><li>이용안내</li></a>
+            <a href=""><li>안전정책</li></a>
+            <a href=""><li>예상금액</li></a>
+            <a href=""><li>고수찾기</li></a>
+            <a href=""><li>숨고보증</li></a>
+            <a href=""><li>고수에게묻다</li></a>
+          </ul>
+          <ul class="footer-list">
+            <a href=""
+              ><li><b>고수안내</b></li></a
+            >
+            <a href=""><li>이용안내</li></a>
+            <a href=""><li>고수가이드</li></a>
+            <a href=""><li>고수가입</li></a>
+          </ul>
+          <ul class="footer-list">
+            <a href=""
+              ><li><b>고객센터</b></li></a
+            >
+            <a href=""><li>공지사항</li></a>
+            <a href=""><li>자주묻는질문</li></a>
+          </ul>
         </div>
-      </footer>
-    </div>
+      </div>
+
+      <br />
+
+      <div class="coljust">
+        <div id="footer-company">
+          <div class="col listnone">
+            <a href=""><div class="footer-terms">이용약관</div></a>
+            <a href=""><div class="footer-terms">개인정보처리방침</div></a>
+            <a href=""
+              ><div class="footer-terms">위치기반 서비스 이용약관</div></a
+            >
+            <a href=""><div class="footer-terms">사업자 정보확인</div></a>
+          </div>
+          <p style="font-size: 12px">
+            (주)브레이브모바일은 통신판매중개자로서 통신판매의 당사자가 아니며
+            개별 판매자가 제공하는 서비스에 대한 이행, 계약사항 등과 관련한<br />
+            의무와 책임은 거래당사자에게 있습니다.
+          </p>
+          <p style="font-size: 12px">
+            상호명:(주)브레이브모바일 · 대표이사:KIM ROBIN H ·
+            개인정보책임관리자:김태우 · 주소:서울특별시 강남구 테헤란로 415, L7
+            강남타워 5층<br />
+            사업자등록번호:120-88-22325 · 통신판매업신고증:제
+            2021-서울강남-00551 호 · 직업정보제공사업 신고번호:서울청 제
+            2019-21호<br />
+            고객센터:1599-5319 · 이메일:support@soomgo.com<br />
+            Copyright ©Brave Mobile Inc. All Rights Reserved.
+          </p>
+        </div>
+
+        <div id="footer-sns">
+          <a href=""
+            ><img src="./숨고 소스/icon-footer-sns-facebook.svg" alt="페이스북"
+          /></a>
+          <a href=""
+            ><img
+              src="./숨고 소스/icon-footer-sns-instagram.svg"
+              alt="인스타그램"
+          /></a>
+          <a href=""
+            ><img
+              src="./숨고 소스/icon-footer-sns-naverblog.svg"
+              alt="네이버블로그"
+          /></a>
+          <a href=""
+            ><img
+              src="./숨고 소스/icon-footer-sns-naverpost.svg"
+              alt="네이버포스트"
+          /></a>
+          <a href=""
+            ><img src="./숨고 소스/icon-footer-sns-tistory.svg" alt="티스토리"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
