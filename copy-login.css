@@ -1,0 +1,96 @@
+
+main{
+  background-color: rgb(250, 250, 250);
+}
+
+#login{
+  padding: 80px 0;
+  width: 970px;
+  margin: 0 auto;
+}
+
+#login-main-text{
+  font-size: 34px;
+  color: #323232;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+.login-main-box{
+  width: 424px;
+  height: 644px;
+  background-color: white;
+  margin: 0 auto;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 8px;
+
+}
+
+.login-container{
+  width: 352px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 30px;
+  /* background-color: #323232; */
+}
+
+ul div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label{
+  font-weight: 600;
+  color: #686868;
+}
+
+fieldset{
+  border: none;
+}
+
+input{
+  border: 1px solid rgb(226, 226, 226);
+  padding: 10px;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+input::placeholder{
+  font-size: 12px;
+  color: rgb(177, 177, 177);
+}
+
+.findmy{
+  display: flex;
+  flex-direction: row;
+}
+
+hr{
+  margin: 0px 20px;
+  border-left: 1px solid #afafaf;
+}
+
+.login-button, .button-box{
+  border: none;
+  background-color: #00C7AE;
+  font-size: 16px;
+  color: white;
+  width: 100%;
+  height: 50px;
+}
+
+.kakao{
+  background-color: #FEE500;
+}
+
+.naver{
+  background-color: #03C75A;
+}
+
+
+.facebook{
+  background-color: #1876F2;
+}
