@@ -10,9 +10,9 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./header.css">
-  <link rel="stylesheet" href="./footer.css" />
-  <link rel="stylesheet" href="./copy-login.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/join.css">
 </head>
 <body>
     <!-- 헤더 -->
@@ -20,7 +20,7 @@
       <section class="header-section">
         <a href=""
           ><img
-            src="./숨고 소스/숨고로고.svg"
+            src="./soomgo_sorce/숨고로고.svg"
             alt="숨고"
             style="margin: 15px 20px 0 0"
             width="80px"
@@ -34,7 +34,7 @@
       </section>
       <section id="header-search">
         <img
-          src="./숨고 소스/검색용 돋보기.svg"
+          src="./soomgo_sorce/검색용 돋보기.svg"
           alt="돋보기"
           width="20px"
           style="margin: 0 10px"
@@ -58,7 +58,7 @@
     <!-- 메인 -->
     <main>
       <section id="login">
-      <div id="login-main-text">로그인</div>
+      <div id="login-main-text">숨고에 오신 것을 환영합니다</div>
 
       <section class="login-main-box">
 
@@ -66,48 +66,65 @@
           <form action="" method="">
             <fieldset>
               <ul>
+		<div>
+                  <label for="name">이름 </label>
+                  <input type="text" id="name" placeholder="이름(실명)을 입력해주세요" required>
+                </div>
                 <div>
                   <label for="email">이메일 </label>
                   <input type="email" id="email" placeholder="example@soomgo.com" required>
                 </div>
                 <div>
                   <label for="password">비밀번호</label>
-                  <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required>
+                  <input type="password" id="password" placeholder="영문+숫자 조합 8자리 이상 입력해주세요" required>
                 </div>
-              <input class="login-button" type="submit" value="이메일 로그인">
+              
+
+
+
+
+          <div class="terms-checks">
+		<div>
+                  <label for="terms-all">약관 전체 동의</label>
+                  <input type="checkbox" id="terms-all" values="true">
+                </div>
+
+		<div class="down">
+		<div>
+                  <label for="terms-down-1">만 14세 이상입니다<span>(필수)</span> </label>
+                  <input type="checkbox" id="terms-down-1" values="true" required>
+                </div>
+		<div>
+                  <label for="terms-down-2"><a href="#">이용약관 동의</a><span>(필수)</span> </label>
+                  <input type="checkbox" id="terms-down-2" values="true" required>
+                </div>
+		<div>
+                  <label for="terms-down-3"><a href="#">개인정보 수집 및 이용 동의</a><span>(필수)</span> </label>
+                  <input type="checkbox" id="terms-down-3" values="true" required>
+                </div>
+		<div>
+                  <label for="terms-down-4"><a href="#">선택정보 수집 및 이용 동의</a><span>(선택)</span> </label>
+                  <input type="checkbox" id="terms-down-4" values="true">
+                </div>
+		<div>
+                  <label for="terms-down-5"><a href="#">개인정보 마케팅 활용 동의</a><span>(선택)</span> </label>
+                  <input type="checkbox" id="terms-down-5" values="true">
+                </div>
+		<div>
+                  <label for="terms-down-6"><a href="#">마케팅 알림 수신 동의</a><span>(선택)</span> </label>
+                  <input type="checkbox" id="terms-down-6" values="true">
+                </div>
+		</div>
+
+	  </div>
+
+		<input class="login-button" type="submit" value="회원가입">
             </fieldset>
           </form>
 
-          <div class="findmy">
-            <a href="#">이메일 찾기</a>
-            <hr>
-            <a href="#">비밀번호 찾기</a>
-            <hr>
-            <a href="#">회원가입</a>
-          </div>
+	<a href="#">고수로 가입하시나요></a>
         </div>
 
-
-        <div class="sns-container">
-          <div class="button-box kakao">
-          <a href="#">
-            <img src="./숨고 소스/카카오톡이미지.svg" width="20px">
-            <span>카카오로 시작</span>
-          </a>
-          </div>
-          <div class="button-box naver">
-          <a href="#">
-            <img src="./숨고 소스/네이버이미지.svg" width="20px">
-            <span>네이버로 시작</span>
-          </a>
-          </div>
-          <div class="button-box facebook">
-          <a href="#">
-            <img src="./숨고 소스/페이스북이미지.svg" width="20px">
-            <span>페이스북으로 시작</span>
-          </a>
-          </div>
-        </div>
       </section>
       </section>
     </main>
@@ -126,7 +143,7 @@
               <a href=""
                 ><div class="footerbutton">
                   <img
-                    src="./숨고 소스/icon-download-appstore.svg"
+                    src="./soomgo_sorce/icon-download-appstore.svg"
                     alt="애플스토어"
                   />
                   <span class="footerbutton-text">APP STORE</span>
@@ -135,7 +152,7 @@
               <a href=""
                 ><div class="footerbutton">
                   <img
-                    src="./숨고 소스/icon-download-palystore.svg"
+                    src="./soomgo_sorce/icon-download-palystore.svg"
                     alt="플레이스토어"
                   />
                   <span class="footerbutton-text">PLAY STORE</span>
@@ -214,25 +231,25 @@
 
         <section id="footer-sns">
           <a href="#"
-            ><img src="./숨고 소스/icon-footer-sns-facebook.svg" alt="페이스북"
+            ><img src="./soomgo_sorce/icon-footer-sns-facebook.svg" alt="페이스북"
           /></a>
           <a href="#"
             ><img
-              src="./숨고 소스/icon-footer-sns-instagram.svg"
+              src="./soomgo_sorce/icon-footer-sns-instagram.svg"
               alt="인스타그램"
           /></a>
           <a href="#"
             ><img
-              src="./숨고 소스/icon-footer-sns-naverblog.svg"
+              src="./soomgo_sorce/icon-footer-sns-naverblog.svg"
               alt="네이버블로그"
           /></a>
           <a href="#"
             ><img
-              src="./숨고 소스/icon-footer-sns-naverpost.svg"
+              src="./soomgo_sorce/icon-footer-sns-naverpost.svg"
               alt="네이버포스트"
           /></a>
           <a href="#"
-            ><img src="./숨고 소스/icon-footer-sns-tistory.svg" alt="티스토리"
+            ><img src="./soomgo_sorce/icon-footer-sns-tistory.svg" alt="티스토리"
           /></a>
         </section>
       </section>
