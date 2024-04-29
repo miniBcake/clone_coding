@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>숨고:카피연습-login</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/footer.css" />
-  <link rel="stylesheet" href="./css/login.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>숨고:카피연습-login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
     <!-- 헤더 -->
     <header>
       <section class="header-section">
@@ -58,62 +58,74 @@
     <!-- 메인 -->
     <main>
       <section id="login">
-      <div id="login-main-text">로그인</div>
+        <div id="login-main-text">로그인</div>
 
-      <section class="login-main-box">
+        <section class="login-main-box">
+          <div class="login-container">
+            <form action="" method="">
+              <fieldset>
+                <ul>
+                  <div>
+                    <label for="email">이메일 </label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="example@soomgo.com"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="password">비밀번호</label>
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder="비밀번호를 입력해주세요"
+                      required
+                    />
+                  </div>
+                  <input
+                    class="login-button"
+                    type="submit"
+                    value="이메일 로그인"
+                  />
+                </ul>
+              </fieldset>
+            </form>
 
-        <div class="login-container">
-          <form action="" method="">
-            <fieldset>
-              <ul>
-                <div>
-                  <label for="email">이메일 </label>
-                  <input type="email" id="email" placeholder="example@soomgo.com" required>
-                </div>
-                <div>
-                  <label for="password">비밀번호</label>
-                  <input type="password" id="password" placeholder="비밀번호를 입력해주세요" required>
-                </div>
-              <input class="login-button" type="submit" value="이메일 로그인">
-            </fieldset>
-          </form>
-
-          <div class="findmy">
-            <a href="#">이메일 찾기</a>
-            <hr>
-            <a href="#">비밀번호 찾기</a>
-            <hr>
-            <a href="#">회원가입</a>
+            <div class="findmy">
+              <a href="#">이메일 찾기</a>
+              <hr />
+              <a href="#">비밀번호 찾기</a>
+              <hr />
+              <a href="#">회원가입</a>
+            </div>
           </div>
-        </div>
 
-
-        <div class="sns-container">
-          <div class="button-box kakao">
-          <a href="#">
-            <img src="./soomgo_sorce/카카오톡이미지.svg" width="20px">
-            <span>카카오로 시작</span>
-          </a>
+          <div class="sns-container">
+            <div class="button-box kakao">
+              <a href="#">
+                <img src="./soomgo_sorce/카카오톡이미지.svg" width="20px" />
+                <span>카카오로 시작</span>
+              </a>
+            </div>
+            <div class="button-box naver">
+              <a href="#">
+                <img src="./soomgo_sorce/네이버이미지.svg" width="20px" />
+                <span>네이버로 시작</span>
+              </a>
+            </div>
+            <div class="button-box facebook">
+              <a href="#">
+                <img src="./soomgo_sorce/페이스북이미지.svg" width="20px" />
+                <span>페이스북으로 시작</span>
+              </a>
+            </div>
           </div>
-          <div class="button-box naver">
-          <a href="#">
-            <img src="./soomgo_sorce/네이버이미지.svg" width="20px">
-            <span>네이버로 시작</span>
-          </a>
-          </div>
-          <div class="button-box facebook">
-          <a href="#">
-            <img src="./soomgo_sorce/페이스북이미지.svg" width="20px">
-            <span>페이스북으로 시작</span>
-          </a>
-          </div>
-        </div>
-      </section>
+        </section>
       </section>
     </main>
 
-  
-   <!-- 푸터 -->
+    <!-- 푸터 -->
     <hr />
     <footer>
       <section class="footer-first">
@@ -214,7 +226,9 @@
 
         <section id="footer-sns">
           <a href="#"
-            ><img src="./soomgo_sorce/icon-footer-sns-facebook.svg" alt="페이스북"
+            ><img
+              src="./soomgo_sorce/icon-footer-sns-facebook.svg"
+              alt="페이스북"
           /></a>
           <a href="#"
             ><img
@@ -232,10 +246,12 @@
               alt="네이버포스트"
           /></a>
           <a href="#"
-            ><img src="./soomgo_sorce/icon-footer-sns-tistory.svg" alt="티스토리"
+            ><img
+              src="./soomgo_sorce/icon-footer-sns-tistory.svg"
+              alt="티스토리"
           /></a>
         </section>
       </section>
     </footer>
-</body>
+  </body>
 </html>
