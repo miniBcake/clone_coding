@@ -1,34 +1,5 @@
-* {
-  /* 한지윤 */
-
-  /* <uniquifier>: Use a unique and descriptive class name*/
-  /* <weight>: Use a value from 100 to 900 */
-  /* .noto-sans-kr-<uniquifier>  */
-  font-family: "Noto Sans KR", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: #737373;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-  /* border: 0; */
-}
-
-a {
-  text-decoration: none;
-}
-
-b {
-  font-weight: 600;
-}
-
-li{
-  margin-bottom: 5px;
-}
-
-footer hr {
-  border: 1px 0 0 0 solid rgb(236, 236, 236, 0.5);
+#footerhr {
+  border: 1px 0 0 0 solid rgb(236, 236, 236, 0.3);
 }
 
 footer {

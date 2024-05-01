@@ -12,58 +12,60 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/header.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- 헤더 -->
     <header>
-      <section class="header-section">
-        <a href=""
-          ><img
-            src="./soomgo_sorce/숨고로고.svg"
-            alt="숨고"
-            style="margin: 15px 20px 0 0"
-            width="80px"
-        /></a>
-        <ul class="header--list01">
-          <a href="#" class="header--text1">견적요청</a>
-          <a href="#" class="header--text1">고수찾기</a>
-          <a href="#" class="header--text1">마켓</a>
-          <a href="#" class="header--text1">커뮤니티</a>
+      <section id="white">
+        <section class="header-section">
+          <a href="main.html"
+            ><img
+              src="./soomgo_source/숨고로고.svg"
+              alt="숨고"
+              style="margin: 15px 20px 0 0"
+              width="80px"
+          /></a>
+          <ul class="header--list01">
+            <a href="#" class="header--text1">견적요청</a>
+            <a href="#" class="header--text1">고수찾기</a>
+            <a href="#" class="header--text1">마켓</a>
+            <a href="#" class="header--text1">커뮤니티</a>
+          </ul>
+        </section>
+        <section id="header-search">
+          <img
+            src="./soomgo_source/검색용 돋보기.svg"
+            alt="돋보기"
+            width="20px"
+            style="margin: 0 10px"
+          />
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="어떤 서비스가 필요하세요?"
+          />
+        </section>
+        <ul class="header--list02">
+          <a href="login.html"><li class="header--text02">로그인</li></a>
+          <a href="join.html"><li class="header--text02">회원가입</li></a>
+          <a href="#"
+            ><li class="header--text02" id="headerbutton">고수가입</li></a
+          >
         </ul>
       </section>
-      <section id="header-search">
-        <img
-          src="./soomgo_sorce/검색용 돋보기.svg"
-          alt="돋보기"
-          width="20px"
-          style="margin: 0 10px"
-        />
-        <input
-          type="text"
-          id="search"
-          name="search"
-          placeholder="어떤 서비스가 필요하세요?"
-        />
-      </section>
-      <ul class="header--list02">
-        <a href="#"><li class="header--text02">로그인</li></a>
-        <a href="#"><li class="header--text02">회원가입</li></a>
-        <a href="#"
-          ><li class="header--text02" id="headerbutton">고수가입</li></a
-        >
-      </ul>
     </header>
-
     <!-- 메인 -->
     <main>
       <section id="searchmain">
         <h1>1,000가지 생활 서비스를 단 한 곳에서</h1>
         <div id="searchmain-search">
           <img
-            src="./soomgo_sorce/검색용 돋보기.svg"
+            src="./soomgo_source/검색용 돋보기.svg"
             alt="돋보기"
             width="20px"
             style="margin: 0 10px"
@@ -75,65 +77,81 @@
             placeholder="어떤 서비스가 필요하세요?"
           />
         </div>
-        <!-- <div class="searchmain-search">
-            <img
-              src="./soomgo_sorce/검색용 돋보기.svg"
-              alt="돋보기"
-              width="20px"
-            />
-            <div>어떤 서비스가 필요하세요?</div>
-          </div> -->
         <ul class="search-list">
           <a href="#" class="search-list-li">
-            <img src="./soomgo_sorce/전체보기.svg" alt="전체보기" width="30px" />
+            <img
+              src="./soomgo_source/전체보기.svg"
+              alt="전체보기"
+              width="30px"
+            />
             <div class="search-catagory-text">전체</div>
           </a>
           <a href="#" class="search-list-li">
-            <img src="./soomgo_sorce/이사청소.svg" alt="이사청소" width="30px" />
+            <img
+              src="./soomgo_source/이사청소.svg"
+              alt="이사청소"
+              width="30px"
+            />
             <div class="search-catagory-text">이사/청소</div>
           </a>
           <a href="#" class="search-list-li">
-            <img src="./soomgo_sorce/설치수리.svg" alt="설치수리" width="30px" />
+            <img
+              src="./soomgo_source/설치수리.svg"
+              alt="설치수리"
+              width="30px"
+            />
             <div class="search-catagory-text">설치/수리</div>
           </a>
           <a href="#" class="search-list-li">
-            <img src="./soomgo_sorce/인테리어.svg" alt="인테리어" width="30px" />
+            <img
+              src="./soomgo_source/인테리어.svg"
+              alt="인테리어"
+              width="30px"
+            />
             <div class="search-catagory-text">인테리어</div>
           </a>
           <a href="#" class="search-list-li">
-            <img src="./soomgo_sorce/외주.svg" alt="외주" width="30px" />
+            <img src="./soomgo_source/외주.svg" alt="외주" width="30px" />
             <div class="search-catagory-text">외주</div>
           </a>
           <a href="#" class="search-list-li">
             <img
-              src="./soomgo_sorce/이벤트뷰티.svg"
+              src="./soomgo_source/이벤트뷰티.svg"
               alt="이벤트뷰티"
               width="30px"
             />
             <div class="search-catagory-text">이벤트/뷰티</div>
           </a>
           <a href="" class="search-list-li">
-            <img src="./soomgo_sorce/취업직무.svg" alt="취업직무" width="30px" />
+            <img
+              src="./soomgo_source/취업직무.svg"
+              alt="취업직무"
+              width="30px"
+            />
             <div class="search-catagory-text">취업/직무</div>
           </a>
           <a href="" class="search-list-li">
-            <img src="./soomgo_sorce/과외.svg" alt="과외" width="30px" />
+            <img src="./soomgo_source/과외.svg" alt="과외" width="30px" />
             <div class="search-catagory-text">과외</div>
           </a>
           <a href="" class="search-list-li">
-            <img src="./soomgo_sorce/취미자기계발.svg" alt="취미" width="30px" />
+            <img
+              src="./soomgo_source/취미자기계발.svg"
+              alt="취미"
+              width="30px"
+            />
             <div class="search-catagory-text">취미/자기계발</div>
           </a>
           <a href="" class="search-list-li">
-            <img src="./soomgo_sorce/자동차.svg" alt="자동차" width="30px" />
+            <img src="./soomgo_source/자동차.svg" alt="자동차" width="30px" />
             <div class="search-catagory-text">자동차</div>
           </a>
           <a href="" class="search-list-li">
-            <img src="./soomgo_sorce/법률금융.svg" alt="법률" width="30px" />
+            <img src="./soomgo_source/법률금융.svg" alt="법률" width="30px" />
             <div class="search-catagory-text">법률/금융</div>
           </a>
           <a href="" class="search-list-li">
-            <img src="./soomgo_sorce/기타.svg" alt="기타" width="30px" />
+            <img src="./soomgo_source/기타.svg" alt="기타" width="30px" />
             <div class="search-catagory-text">기타</div>
           </a>
         </ul>
@@ -144,22 +162,46 @@
         <div class="banner-over">
           <!-- 배너이미지 -->
           <span>
-          <img class="imglong" src="./soomgo_sorce/배너_40쿠폰.png" alt="배너1" />
-          <img class="imglong" src="./soomgo_sorce/배너_명예고수.png" alt="배너2" />
-          <img class="imglong" src="./soomgo_sorce/배너_소상공인지원.png" alt="배너3" />
-          <img class="imglong" src="./soomgo_sorce/배너_숨고레터.png" alt="배너4" />
-          <img class="imglong" src="./soomgo_sorce/배너_스탠바이미.png" alt="배너5" />
-          <img class="imglong" src="./soomgo_sorce/배너_안전하게고수.png" alt="배너6" />
+            <img
+              class="imglong"
+              src="./soomgo_source/배너_40쿠폰.png"
+              alt="배너1"
+            />
+            <img
+              class="imglong"
+              src="./soomgo_source/배너_명예고수.png"
+              alt="배너2"
+            />
+            <img
+              class="imglong"
+              src="./soomgo_source/배너_소상공인지원.png"
+              alt="배너3"
+            />
+            <img
+              class="imglong"
+              src="./soomgo_source/배너_숨고레터.png"
+              alt="배너4"
+            />
+            <img
+              class="imglong"
+              src="./soomgo_source/배너_스탠바이미.png"
+              alt="배너5"
+            />
+            <img
+              class="imglong"
+              src="./soomgo_source/배너_안전하게고수.png"
+              alt="배너6"
+            />
           </span>
         </div>
         <img
           class="arrow-right"
-          src="./soomgo_sorce/화살표오른쪽.svg"
+          src="./soomgo_source/화살표오른쪽.svg"
           alt="화살표오른쪽"
         />
         <img
           class="arrow-left"
-          src="./soomgo_sorce/화살표왼쪽.svg"
+          src="./soomgo_source/화살표왼쪽.svg"
           alt="화살표왼쪽"
         />
       </section>
@@ -172,14 +214,14 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/숨고인기서비스1.png"
+              src="./soomgo_source/숨고인기서비스1.png"
               alt="게시물1"
               width="228px"
             />
             <div class="hot-text">피아노/키보드레슨</div>
             <div class="hot-text-small">
               <img
-                src="./soomgo_sorce/요청아이콘.svg"
+                src="./soomgo_source/요청아이콘.svg"
                 alt="요청"
                 width="16px"
                 style="margin-right: 6px"
@@ -190,14 +232,14 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/숨고인기서비스2.png"
+              src="./soomgo_source/숨고인기서비스2.png"
               alt="게시물2"
               width="228px"
             />
             <div class="hot-text">골프 레슨</div>
             <div class="hot-text-small">
               <img
-                src="./soomgo_sorce/요청아이콘.svg"
+                src="./soomgo_source/요청아이콘.svg"
                 alt="요청"
                 width="16px"
                 style="margin-right: 6px"
@@ -208,14 +250,14 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/숨고인기서비스3.png"
+              src="./soomgo_source/숨고인기서비스3.png"
               alt="게시물3"
               width="228px"
             />
             <div class="hot-text">퍼스널트레이닝(PT)</div>
             <div class="hot-text-small">
               <img
-                src="./soomgo_sorce/요청아이콘.svg"
+                src="./soomgo_source/요청아이콘.svg"
                 alt="요청"
                 width="16px"
                 style="margin-right: 6px"
@@ -226,14 +268,14 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/숨고인기서비스4.png"
+              src="./soomgo_source/숨고인기서비스4.png"
               alt="게시물4"
               width="228px"
             />
             <div class="hot-text">보컬 레슨</div>
             <div class="hot-text-small">
               <img
-                src="./soomgo_sorce/요청아이콘.svg"
+                src="./soomgo_source/요청아이콘.svg"
                 alt="요청"
                 width="16px"
                 style="margin-right: 6px"
@@ -244,12 +286,12 @@
         </ul>
         <img
           class="arrow-right"
-          src="./soomgo_sorce/화살표오른쪽.svg"
+          src="./soomgo_source/화살표오른쪽.svg"
           alt="화살표오른쪽"
         />
         <img
           class="arrow-left"
-          src="./soomgo_sorce/화살표왼쪽.svg"
+          src="./soomgo_source/화살표왼쪽.svg"
           alt="화살표왼쪽"
         />
       </section>
@@ -267,7 +309,7 @@
                   선물을...
                 </p>
               </div>
-              <img src="./soomgo_sorce/커뮤니티1.webp" width="64px" />
+              <img src="./soomgo_source/커뮤니티1.webp" width="64px" />
             </div>
             <div class="part1-post">
               <div class="part1-post-text">
@@ -278,7 +320,7 @@
                   급한...
                 </p>
               </div>
-              <img src="./soomgo_sorce/커뮤니티2.webp" width="64px" />
+              <img src="./soomgo_source/커뮤니티2.webp" width="64px" />
             </div>
             <div class="part1-post">
               <div class="part1-post-text">
@@ -289,34 +331,30 @@
                   있습...
                 </p>
               </div>
-              <img src="./soomgo_sorce/커뮤니티3.webp" width="64px" />
+              <img src="./soomgo_source/커뮤니티3.webp" width="64px" />
             </div>
           </div>
 
           <div class="commu-part2">
             <div class="part2-post">
-            <img src="./soomgo_sorce/커뮤니티4.webp" width="208px" />
-            <div class="part2-post-text">
-              <p>고수찾아요</p>
-              <div class="hot-text">
-                고객만족 우수기업 원폴딩도어
+              <img src="./soomgo_source/커뮤니티4.webp" width="208px" />
+              <div class="part2-post-text">
+                <p>고수찾아요</p>
+                <div class="hot-text">고객만족 우수기업 원폴딩도어</div>
+                <p>원폴딩 도어</p>
               </div>
-              <p>
-                원폴딩 도어
-              </p>
             </div>
-          </div>
 
-          <div class="part2-post">
-            <img src="./soomgo_sorce/커뮤니티5.webp" width="208px" />
-            <div class="part2-post-text">
-              <p>차선 도색 및 제거</p>
-              <div class="hot-text">
-                주차선도색 도색 관련 정보 인터넷 지안건설 검색 www
+            <div class="part2-post">
+              <img src="./soomgo_source/커뮤니티5.webp" width="208px" />
+              <div class="part2-post-text">
+                <p>차선 도색 및 제거</p>
+                <div class="hot-text">
+                  주차선도색 도색 관련 정보 인터넷 지안건설 검색 www
+                </div>
+                <p>차선, 주차선 안전 시설물 전문 지안 건설 대표 장경호</p>
               </div>
-              <p>차선, 주차선 안전 시설물 전문 지안 건설 대표 장경호</p>
             </div>
-          </div>
           </div>
         </div>
 
@@ -326,19 +364,18 @@
       <!--  -->
       <section id="gosu-portfolio">
         <h2>숨은고수 포트폴리오</h2>
-        <!-- 클래핑마스크X 컨텐츠박스?-->
         <ul class="gosu-portfolio-list">
           <li>
             <div class="gosu-imgbox">
               <img
-                src="./soomgo_sorce/숨은고수1.webp"
+                src="./soomgo_source/숨은고수1.webp"
                 alt="게시물1"
                 width="228px"
               />
             </div>
             <div class="gosu-port-text">
               <img
-                src="./soomgo_sorce/숨고_포폴_1.png"
+                src="./soomgo_source/숨고_포폴_1.png"
                 alt="유저프로필사진"
                 width="20px"
                 style="margin-right: 6px"
@@ -349,14 +386,14 @@
           <li>
             <div class="gosu-imgbox">
               <img
-                src="./soomgo_sorce/숨은고수2.webp"
+                src="./soomgo_source/숨은고수2.webp"
                 alt="게시물2"
                 width="100%"
               />
             </div>
             <div class="gosu-port-text">
               <img
-                src="./soomgo_sorce/숨고_포폴_2.png"
+                src="./soomgo_source/숨고_포폴_2.png"
                 alt="유저프로필사진"
                 width="20px"
                 style="margin-right: 6px"
@@ -367,14 +404,14 @@
           <li>
             <div class="gosu-imgbox">
               <img
-                src="./soomgo_sorce/숨은고수3.webp"
+                src="./soomgo_source/숨은고수3.webp"
                 alt="게시물3"
                 width="100%"
               />
             </div>
             <div class="gosu-port-text">
               <img
-                src="./soomgo_sorce/숨고_포폴_3.png"
+                src="./soomgo_source/숨고_포폴_3.png"
                 alt="유저프로필사진"
                 width="20px"
                 style="margin-right: 6px"
@@ -385,14 +422,14 @@
           <li>
             <div class="gosu-imgbox">
               <img
-                src="./soomgo_sorce/숨은고수4.webp"
+                src="./soomgo_source/숨은고수4.webp"
                 alt="게시물4"
                 width="100%"
               />
             </div>
             <div class="gosu-port-text">
               <img
-                src="./soomgo_sorce/숨고_포폴_4.png"
+                src="./soomgo_source/숨고_포폴_4.png"
                 alt="유저프로필사진"
                 width="20px"
                 style="margin-right: 6px"
@@ -407,7 +444,7 @@
       <section id="app-soomgo">
         <a href="#"
           ><img
-            src="./soomgo_sorce/숨고앱으로더편하게.png"
+            src="./soomgo_source/숨고앱으로더편하게.png"
             alt="앱안내"
             width="970px"
         /></a>
@@ -420,7 +457,7 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/청소하는날1.webp"
+              src="./soomgo_source/청소하는날1.webp"
               alt="게시물1"
               width="228px"
             />
@@ -429,7 +466,7 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/청소하는날2.webp"
+              src="./soomgo_source/청소하는날2.webp"
               alt="게시물2"
               width="228px"
             />
@@ -438,7 +475,7 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/청소하는날3.webp"
+              src="./soomgo_source/청소하는날3.webp"
               alt="게시물3"
               width="228px"
             />
@@ -447,7 +484,7 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/청소하는날4.webp"
+              src="./soomgo_source/청소하는날4.webp"
               alt="게시물4"
               width="228px"
             />
@@ -456,12 +493,12 @@
         </ul>
         <img
           class="arrow-right"
-          src="./soomgo_sorce/화살표오른쪽.svg"
+          src="./soomgo_source/화살표오른쪽.svg"
           alt="화살표오른쪽"
         />
         <img
           class="arrow-left"
-          src="./soomgo_sorce/화살표왼쪽.svg"
+          src="./soomgo_source/화살표왼쪽.svg"
           alt="화살표왼쪽"
         />
       </section>
@@ -501,7 +538,7 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/숨은이야기 (1).png"
+              src="./soomgo_source/숨은이야기 (1).png"
               alt="게시물1"
               width="310px"
             />
@@ -512,7 +549,7 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/숨은이야기 (2).png"
+              src="./soomgo_source/숨은이야기 (2).png"
               alt="게시물2"
               width="310px"
             />
@@ -521,7 +558,7 @@
           <a href="#">
             <img
               class="img-round"
-              src="./soomgo_sorce/숨은이야기 (3).png"
+              src="./soomgo_source/숨은이야기 (3).png"
               alt="게시물3"
               width="310px"
             />
@@ -530,12 +567,12 @@
         </ul>
         <img
           class="arrow-right"
-          src="./soomgo_sorce/화살표오른쪽.svg"
+          src="./soomgo_source/화살표오른쪽.svg"
           alt="화살표오른쪽"
         />
         <img
           class="arrow-left"
-          src="./soomgo_sorce/화살표왼쪽.svg"
+          src="./soomgo_source/화살표왼쪽.svg"
           alt="화살표왼쪽"
         />
         <a href="#" class="all-see"> 전체보기 > </a>
@@ -551,7 +588,7 @@
 
         <div class="consultant-imgbox">
           <div class="img-text">
-            <img src="./soomgo_sorce/전문가로활동하시나요.webp" alt="전문가" />
+            <img src="./soomgo_source/전문가로활동하시나요.webp" alt="전문가" />
             <p>고객의 요청서를 무료로 받으세요</p>
           </div>
         </div>
@@ -559,7 +596,7 @@
     </main>
 
     <!-- 푸터 -->
-    <hr />
+    <hr id="footerhr" />
     <footer>
       <section class="footer-first">
         <div id="footer-1599-5319">
@@ -571,7 +608,7 @@
               <a href=""
                 ><div class="footerbutton">
                   <img
-                    src="./soomgo_sorce/icon-download-appstore.svg"
+                    src="./soomgo_source/icon-download-appstore.svg"
                     alt="애플스토어"
                   />
                   <span class="footerbutton-text">APP STORE</span>
@@ -580,7 +617,7 @@
               <a href=""
                 ><div class="footerbutton">
                   <img
-                    src="./soomgo_sorce/icon-download-palystore.svg"
+                    src="./soomgo_source/icon-download-palystore.svg"
                     alt="플레이스토어"
                   />
                   <span class="footerbutton-text">PLAY STORE</span>
@@ -659,25 +696,29 @@
 
         <section id="footer-sns">
           <a href="#"
-            ><img src="./soomgo_sorce/icon-footer-sns-facebook.svg" alt="페이스북"
+            ><img
+              src="./soomgo_source/icon-footer-sns-facebook.svg"
+              alt="페이스북"
           /></a>
           <a href="#"
             ><img
-              src="./soomgo_sorce/icon-footer-sns-instagram.svg"
+              src="./soomgo_source/icon-footer-sns-instagram.svg"
               alt="인스타그램"
           /></a>
           <a href="#"
             ><img
-              src="./soomgo_sorce/icon-footer-sns-naverblog.svg"
+              src="./soomgo_source/icon-footer-sns-naverblog.svg"
               alt="네이버블로그"
           /></a>
           <a href="#"
             ><img
-              src="./soomgo_sorce/icon-footer-sns-naverpost.svg"
+              src="./soomgo_source/icon-footer-sns-naverpost.svg"
               alt="네이버포스트"
           /></a>
           <a href="#"
-            ><img src="./soomgo_sorce/icon-footer-sns-tistory.svg" alt="티스토리"
+            ><img
+              src="./soomgo_source/icon-footer-sns-tistory.svg"
+              alt="티스토리"
           /></a>
         </section>
       </section>

@@ -13,14 +13,16 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/join.css" />
+    <script defer src="js/join.js"></script>
   </head>
   <body>
     <!-- 헤더 -->
     <header>
+      <section id="white">
       <section class="header-section">
-        <a href=""
+        <a href="main.html"
           ><img
-            src="./soomgo_sorce/숨고로고.svg"
+            src="./soomgo_source/숨고로고.svg"
             alt="숨고"
             style="margin: 15px 20px 0 0"
             width="80px"
@@ -34,7 +36,7 @@
       </section>
       <section id="header-search">
         <img
-          src="./soomgo_sorce/검색용 돋보기.svg"
+          src="./soomgo_source/검색용 돋보기.svg"
           alt="돋보기"
           width="20px"
           style="margin: 0 10px"
@@ -47,12 +49,13 @@
         />
       </section>
       <ul class="header--list02">
-        <a href="#"><li class="header--text02">로그인</li></a>
-        <a href="#"><li class="header--text02">회원가입</li></a>
+        <a href="login.html"><li class="header--text02">로그인</li></a>
+        <a href="join.html"><li class="header--text02">회원가입</li></a>
         <a href="#"
           ><li class="header--text02" id="headerbutton">고수가입</li></a
         >
       </ul>
+      </section>
     </header>
 
     <!-- 메인 -->
@@ -96,7 +99,7 @@
 
                 <section class="terms-checks">
                   <div class="terms-all-container">
-                    <label for="terms-all">약관 전체 동의</label>
+                    <label for="terms-all" >약관 전체 동의</label>
                     <input type="checkbox" id="terms-all" values="true" />
                   </div>
                   <hr />
@@ -107,7 +110,8 @@
                       </label>
                       <input
                         type="checkbox"
-                        id="terms"
+                        class="terms"
+                        id="terms-1"
                         values="만14세"
                         required
                       />
@@ -118,7 +122,8 @@
                       </label>
                       <input
                         type="checkbox"
-                        id="terms"
+                        class="terms"
+                        id="terms-2"
                         values="이용약관"
                         required
                       />
@@ -130,7 +135,8 @@
                       </label>
                       <input
                         type="checkbox"
-                        id="terms"
+                        class="terms"
+                        id="terms-3"
                         values="개인정보"
                         required
                       />
@@ -142,7 +148,8 @@
                       </label>
                       <input
                         type="checkbox"
-                        id="terms"
+                        class="terms"
+                        id="terms-4"
                         values="선택정보(선택)"
                       />
                     </div>
@@ -151,14 +158,16 @@
                         ><a href="#">개인정보 마케팅 활용 동의</a
                         ><span>(선택)</span>
                       </label>
-                      <input type="checkbox" id="terms" values="마케팅(선택)" />
+                      <input type="checkbox" class="terms"
+                      id="terms-5" values="마케팅(선택)" />
                     </div>
                     <div>
                       <label for="terms"
                         ><a href="#">마케팅 알림 수신 동의</a
                         ><span>(선택)</span>
                       </label>
-                      <input type="checkbox" id="terms" values="알림(선택)" />
+                      <input type="checkbox" class="terms"
+                      id="terms-6" values="알림(선택)" />
                     </div>
                   </section>
                 </section>
@@ -174,7 +183,7 @@
     </main>
 
     <!-- 푸터 -->
-    <hr />
+    <hr id="footerhr" />
     <footer>
       <section class="footer-first">
         <div id="footer-1599-5319">
@@ -186,7 +195,7 @@
               <a href=""
                 ><div class="footerbutton">
                   <img
-                    src="./soomgo_sorce/icon-download-appstore.svg"
+                    src="./soomgo_source/icon-download-appstore.svg"
                     alt="애플스토어"
                   />
                   <span class="footerbutton-text">APP STORE</span>
@@ -195,7 +204,7 @@
               <a href=""
                 ><div class="footerbutton">
                   <img
-                    src="./soomgo_sorce/icon-download-palystore.svg"
+                    src="./soomgo_source/icon-download-palystore.svg"
                     alt="플레이스토어"
                   />
                   <span class="footerbutton-text">PLAY STORE</span>
@@ -275,27 +284,27 @@
         <section id="footer-sns">
           <a href="#"
             ><img
-              src="./soomgo_sorce/icon-footer-sns-facebook.svg"
+              src="./soomgo_source/icon-footer-sns-facebook.svg"
               alt="페이스북"
           /></a>
           <a href="#"
             ><img
-              src="./soomgo_sorce/icon-footer-sns-instagram.svg"
+              src="./soomgo_source/icon-footer-sns-instagram.svg"
               alt="인스타그램"
           /></a>
           <a href="#"
             ><img
-              src="./soomgo_sorce/icon-footer-sns-naverblog.svg"
+              src="./soomgo_source/icon-footer-sns-naverblog.svg"
               alt="네이버블로그"
           /></a>
           <a href="#"
             ><img
-              src="./soomgo_sorce/icon-footer-sns-naverpost.svg"
+              src="./soomgo_source/icon-footer-sns-naverpost.svg"
               alt="네이버포스트"
           /></a>
           <a href="#"
             ><img
-              src="./soomgo_sorce/icon-footer-sns-tistory.svg"
+              src="./soomgo_source/icon-footer-sns-tistory.svg"
               alt="티스토리"
           /></a>
         </section>

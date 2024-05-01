@@ -24,9 +24,10 @@ main{
 
 .join-main-box{
   width: 410px;
-  height: 870px;
+  height: auto;
   background-color: white;
   margin: 0 auto;
+  padding-bottom: 30px;
   border: 1px solid rgb(226, 226, 226,0.5);
   border-radius: 8px;
 
@@ -72,16 +73,19 @@ ul div{
   margin: 12px 0;
 }
 
+
 fieldset{
   border: none;
 }
 
-#join input{
+#join ul input{
   border: 1px solid rgb(226, 226, 226);
   padding: 15px;
   border-radius: 6px;
   margin: 5px 0;
+  outline: none;
 }
+
 
 input::placeholder{
   font-size: 14px;
@@ -133,20 +137,20 @@ main hr{
 
 /* 체크박스 변경 */
 
-input#terms, input#terms-all{
+input.terms, input#terms-all{
   width:22px;
   height:22px;
   vertical-align:middle;
 } 
 
-/* input#terms:checked, input#terms-all:checked{
+/* input#terms:checked + .test, input#terms-all:checked + .test{
   display:inline-block; 
   width:24px;
   height:24px;
   border-radius: 2px;
   vertical-align:middle;
-} 
-   */
+}  */
+  
 
 /* 약관전체동의 밑에 */
 /* #join hr{

@@ -281,6 +281,7 @@ main {
   background-color: rgb(255, 255, 255, 0);
   border: 0;
   width: 500px;
+  outline: none;
 }
 
 .search-list {
