@@ -628,6 +628,7 @@ main {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .consultant-imgbox{
@@ -635,7 +636,8 @@ main {
   border-radius: 8px;
   width: 660px;
   height: 400px;
-
+  position: relative;
+  overflow: hidden;
 }
 
 .new-consultant-button{
@@ -650,12 +652,60 @@ main {
 .img-text{
   margin: 10px auto;
   text-align: center;
+  display: flex;
+  position: relative;
+  /* left: 0px; */
+  left: -660px;
+}
+
+.text-box{
+  padding: 0 170px;
+  height: 400px;
+  /* background-color: #00c7ae; */
+  margin-left: 10px;
+  position: relative;
 }
 
 .img-text p{
   margin-top: 60px;
   font-size: 16px;
   font-weight: 600;
+}
+
+.new-right, .new-left{
+  position: absolute;
+  font-size: 60px;
+  top: 120px;
+  color: #dbdbdb;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/* .new-right:hover, .new-left:hover{
+  color: #737373;
+} */
+
+.new-right{
+  right: 40px;
+}
+
+.new-left{
+  left: 40px;
+}
+
+.dot-select{
+  display: flex;
+  position: absolute;
+  bottom: 90px;
+  left: 300px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.dot1, .dot2, .dot3{
+  font-size: 10px;
+  margin: 0 4px;
+  color: #dbdbdb;
 }
 
 /*  */
