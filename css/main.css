@@ -15,6 +15,14 @@
   /* border: 0; */
 }
 
+/* 텍스트긁기 방지 */
+body { 
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
 .img-round {
   border-radius: 8px;
 }
@@ -452,7 +460,7 @@ main {
 }
 
 .story-imgcontainer a{
-  margin-right: 15px;
+  margin-right: 18px;
 }
 
 .hot-text{

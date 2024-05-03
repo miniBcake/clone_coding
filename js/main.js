@@ -204,7 +204,7 @@ let slideImgSub_hi = document.querySelectorAll(".story-imgcontainer a");
 let prevBtnSub_hi = document.querySelector("#gosu-story .arrow-left");
 let nextBtnSub_hi = document.querySelector("#gosu-story .arrow-right");
 
-let slideWidthSub_hi = 327;
+let slideWidthSub_hi = 330;
 let currentIdxSub_hi = 0;
 let slideCntSub_hi = slideImgSub_hi.length - 3;
 
