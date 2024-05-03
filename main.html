@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="js/main.js"></script>
   </head>
   <body>
     <!-- 헤더 -->
@@ -76,6 +77,31 @@
             name="search"
             placeholder="어떤 서비스가 필요하세요?"
           />
+        </div>
+        <div class="search-dropmenu">
+          <div class="search-tab-top">
+            <span>인기 키워드</span>
+            <span>최근 검색한 서비스</span>
+          </div>
+          <div class="search-tab">
+            <ul>
+              <li>피아노/키보드 레슨</li>
+              <li>골프 레슨</li>
+              <li>퍼스널트레이닝(PT)</li>
+              <li>보컬 레슨</li>
+              <li>수학 과외</li>
+              <li>에어컨 설치 및 수리</li>
+              <li>문 설치 및 수리</li>
+              <li>수도 관련 설치 및 수리</li>
+            </ul>
+            <div class="no-searchlist">
+              <br /><br /><br /><br /><br />최근 검색한 내역이 없습니다
+            </div>
+          </div>
+          <div class="search-tab-bottom">
+            <p>전체 삭제</p>
+            <p class="search-close">닫기</p>
+          </div>
         </div>
         <ul class="search-list">
           <a href="#" class="search-list-li">
@@ -210,79 +236,153 @@
       <section id="hot-service">
         <h2>숨고 인기 서비스</h2>
         <ul class="hot-service-list">
-          <!-- 게시물 -->
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/숨고인기서비스1.png"
-              alt="게시물1"
-              width="228px"
-            />
-            <div class="hot-text">피아노/키보드레슨</div>
-            <div class="hot-text-small">
+          <div class="hot-slide">
+            <!-- 게시물 -->
+            <a href="#">
               <img
-                src="./soomgo_source/요청아이콘.svg"
-                alt="요청"
-                width="16px"
-                style="margin-right: 6px"
+                class="img-round"
+                src="./soomgo_source/숨고인기서비스1.png"
+                alt="게시물1"
+                width="228px"
               />
-              <span>240,840명 요청</span>
-            </div></a
-          >
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/숨고인기서비스2.png"
-              alt="게시물2"
-              width="228px"
-            />
-            <div class="hot-text">골프 레슨</div>
-            <div class="hot-text-small">
+              <div class="hot-text">피아노/키보드레슨</div>
+              <div class="hot-text-small">
+                <img
+                  src="./soomgo_source/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>240,840명 요청</span>
+              </div></a
+            >
+            <a href="#">
               <img
-                src="./soomgo_source/요청아이콘.svg"
-                alt="요청"
-                width="16px"
-                style="margin-right: 6px"
+                class="img-round"
+                src="./soomgo_source/숨고인기서비스2.png"
+                alt="게시물2"
+                width="228px"
               />
-              <span>368,893명 요청</span>
-            </div></a
-          >
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/숨고인기서비스3.png"
-              alt="게시물3"
-              width="228px"
-            />
-            <div class="hot-text">퍼스널트레이닝(PT)</div>
-            <div class="hot-text-small">
+              <div class="hot-text">골프 레슨</div>
+              <div class="hot-text-small">
+                <img
+                  src="./soomgo_source/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>368,893명 요청</span>
+              </div></a
+            >
+            <a href="#">
               <img
-                src="./soomgo_source/요청아이콘.svg"
-                alt="요청"
-                width="16px"
-                style="margin-right: 6px"
+                class="img-round"
+                src="./soomgo_source/숨고인기서비스3.png"
+                alt="게시물3"
+                width="228px"
               />
-              <span>669,676명 요청</span>
-            </div></a
-          >
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/숨고인기서비스4.png"
-              alt="게시물4"
-              width="228px"
-            />
-            <div class="hot-text">보컬 레슨</div>
-            <div class="hot-text-small">
+              <div class="hot-text">퍼스널트레이닝(PT)</div>
+              <div class="hot-text-small">
+                <img
+                  src="./soomgo_source/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>669,676명 요청</span>
+              </div></a
+            >
+            <a href="#">
               <img
-                src="./soomgo_source/요청아이콘.svg"
-                alt="요청"
-                width="16px"
-                style="margin-right: 6px"
+                class="img-round"
+                src="./soomgo_source/숨고인기서비스4.png"
+                alt="게시물4"
+                width="228px"
               />
-              <span>454,561명 요청</span>
-            </div></a
-          >
+              <div class="hot-text">보컬 레슨</div>
+              <div class="hot-text-small">
+                <img
+                  src="./soomgo_source/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>454,561명 요청</span>
+              </div></a
+            >
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨고인기서비스5.webp"
+                alt="게시물4"
+                width="228px"
+              />
+              <div class="hot-text">수학 과외</div>
+              <div class="hot-text-small">
+                <img
+                  src="./soomgo_source/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>330,868명 요청</span>
+              </div></a
+            >
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨고인기서비스6.webp"
+                alt="게시물4"
+                width="228px"
+              />
+              <div class="hot-text">에어컨 설치 및 수리</div>
+              <div class="hot-text-small">
+                <img
+                  src="./soomgo_source/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>850,168명 요청</span>
+              </div></a
+            >
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨고인기서비스7.webp"
+                alt="게시물4"
+                width="228px"
+              />
+              <div class="hot-text">문 설치 및 수리</div>
+              <div class="hot-text-small">
+                <img
+                  src="./soomgo_source/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>278,512명 요청</span>
+              </div></a
+            >
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨고인기서비스8.webp"
+                alt="게시물4"
+                width="228px"
+              />
+              <div class="hot-text">수도 관련 설치 및 수리</div>
+              <div class="hot-text-small">
+                <img
+                  src="./soomgo_source/요청아이콘.svg"
+                  alt="요청"
+                  width="16px"
+                  style="margin-right: 6px"
+                />
+                <span>381,803명 요청</span>
+              </div></a
+            >
+          </div>
         </ul>
         <img
           class="arrow-right"
@@ -340,7 +440,7 @@
               <img src="./soomgo_source/커뮤니티4.webp" width="208px" />
               <div class="part2-post-text">
                 <p>고수찾아요</p>
-                <div class="hot-text">고객만족 우수기업 원폴딩도어</div>
+                <div class="commu-text">고객만족 우수기업 원폴딩도어</div>
                 <p>원폴딩 도어</p>
               </div>
             </div>
@@ -349,7 +449,7 @@
               <img src="./soomgo_source/커뮤니티5.webp" width="208px" />
               <div class="part2-post-text">
                 <p>차선 도색 및 제거</p>
-                <div class="hot-text">
+                <div class="commu-text">
                   주차선도색 도색 관련 정보 인터넷 지안건설 검색 www
                 </div>
                 <p>차선, 주차선 안전 시설물 전문 지안 건설 대표 장경호</p>
@@ -365,80 +465,164 @@
       <section id="gosu-portfolio">
         <h2>숨은고수 포트폴리오</h2>
         <ul class="gosu-portfolio-list">
-          <li>
-            <div class="gosu-imgbox">
-              <img
-                src="./soomgo_source/숨은고수1.webp"
-                alt="게시물1"
-                width="228px"
-              />
-            </div>
-            <div class="gosu-port-text">
-              <img
-                src="./soomgo_source/숨고_포폴_1.png"
-                alt="유저프로필사진"
-                width="20px"
-                style="margin-right: 6px"
-              />
-              <span style="font-size: 12px">남서연</span>
-            </div>
-          </li>
-          <li>
-            <div class="gosu-imgbox">
-              <img
-                src="./soomgo_source/숨은고수2.webp"
-                alt="게시물2"
-                width="100%"
-              />
-            </div>
-            <div class="gosu-port-text">
-              <img
-                src="./soomgo_source/숨고_포폴_2.png"
-                alt="유저프로필사진"
-                width="20px"
-                style="margin-right: 6px"
-              />
-              <span style="font-size: 12px">써니</span>
-            </div>
-          </li>
-          <li>
-            <div class="gosu-imgbox">
-              <img
-                src="./soomgo_source/숨은고수3.webp"
-                alt="게시물3"
-                width="100%"
-              />
-            </div>
-            <div class="gosu-port-text">
-              <img
-                src="./soomgo_source/숨고_포폴_3.png"
-                alt="유저프로필사진"
-                width="20px"
-                style="margin-right: 6px"
-              />
-              <span style="font-size: 12px">이원비</span>
-            </div>
-          </li>
-          <li>
-            <div class="gosu-imgbox">
-              <img
-                src="./soomgo_source/숨은고수4.webp"
-                alt="게시물4"
-                width="100%"
-              />
-            </div>
-            <div class="gosu-port-text">
-              <img
-                src="./soomgo_source/숨고_포폴_4.png"
-                alt="유저프로필사진"
-                width="20px"
-                style="margin-right: 6px"
-              />
-              <span style="font-size: 12px">삐까번쩍홈케어</span>
-            </div>
-          </li>
+          <div class="gosu-imgcontainer">
+            <li>
+              <div class="gosu-imgbox">
+                <img
+                  src="./soomgo_source/숨은고수1.webp"
+                  alt="게시물1"
+                  width="228px"
+                />
+              </div>
+              <div class="gosu-port-text">
+                <img
+                  src="./soomgo_source/숨고_포폴_1.png"
+                  alt="유저프로필사진"
+                  width="20px"
+                  style="margin-right: 6px"
+                />
+                <span style="font-size: 12px">남서연</span>
+              </div>
+            </li>
+            <li>
+              <div class="gosu-imgbox">
+                <img
+                  src="./soomgo_source/숨은고수2.webp"
+                  alt="게시물2"
+                  width="100%"
+                />
+              </div>
+              <div class="gosu-port-text">
+                <img
+                  src="./soomgo_source/숨고_포폴_2.png"
+                  alt="유저프로필사진"
+                  width="20px"
+                  style="margin-right: 6px"
+                />
+                <span style="font-size: 12px">써니</span>
+              </div>
+            </li>
+            <li>
+              <div class="gosu-imgbox">
+                <img
+                  src="./soomgo_source/숨은고수3.webp"
+                  alt="게시물3"
+                  width="100%"
+                />
+              </div>
+              <div class="gosu-port-text">
+                <img
+                  src="./soomgo_source/숨고_포폴_3.png"
+                  alt="유저프로필사진"
+                  width="20px"
+                  style="margin-right: 6px"
+                />
+                <span style="font-size: 12px">이원비</span>
+              </div>
+            </li>
+            <li>
+              <div class="gosu-imgbox">
+                <img
+                  src="./soomgo_source/숨은고수4.webp"
+                  alt="게시물4"
+                  width="100%"
+                />
+              </div>
+              <div class="gosu-port-text">
+                <img
+                  src="./soomgo_source/숨고_포폴_4.png"
+                  alt="유저프로필사진"
+                  width="20px"
+                  style="margin-right: 6px"
+                />
+                <span style="font-size: 12px">삐까번쩍홈케어</span>
+              </div>
+            </li>
+            <li>
+              <div class="gosu-imgbox">
+                <img
+                  src="./soomgo_source/숨은고수5.webp"
+                  alt="게시물4"
+                  width="100%"
+                />
+              </div>
+              <div class="gosu-port-text">
+                <img
+                  src="./soomgo_source/숨고_포폴_4.png"
+                  alt="유저프로필사진"
+                  width="20px"
+                  style="margin-right: 6px"
+                />
+                <span style="font-size: 12px">정미</span>
+              </div>
+            </li>
+            <li>
+              <div class="gosu-imgbox">
+                <img
+                  src="./soomgo_source/숨은고수6.webp"
+                  alt="게시물4"
+                  width="100%"
+                />
+              </div>
+              <div class="gosu-port-text">
+                <img
+                  src="./soomgo_source/숨고_포폴_4.png"
+                  alt="유저프로필사진"
+                  width="20px"
+                  style="margin-right: 6px"
+                />
+                <span style="font-size: 12px">주한철</span>
+              </div>
+            </li>
+            <li>
+              <div class="gosu-imgbox">
+                <img
+                  src="./soomgo_source/숨은고수7.webp"
+                  alt="게시물4"
+                  width="100%"
+                />
+              </div>
+              <div class="gosu-port-text">
+                <img
+                  src="./soomgo_source/숨고_포폴_4.png"
+                  alt="유저프로필사진"
+                  width="20px"
+                  style="margin-right: 6px"
+                />
+                <span style="font-size: 12px">왕창이사</span>
+              </div>
+            </li>
+            <li>
+              <div class="gosu-imgbox">
+                <img
+                  src="./soomgo_source/숨은고수8.webp"
+                  alt="게시물4"
+                  width="100%"
+                />
+              </div>
+              <div class="gosu-port-text">
+                <img
+                  src="./soomgo_source/숨고_포폴_4.png"
+                  alt="유저프로필사진"
+                  width="20px"
+                  style="margin-right: 6px"
+                />
+                <span style="font-size: 12px">화이트클리닉</span>
+              </div>
+            </li>
+          </div>
         </ul>
         <div class="all-see">전체보기 ></div>
+        <img
+          class="arrow-right"
+          src="./soomgo_source/화살표오른쪽.svg"
+          alt="화살표오른쪽"
+        />
+        <img
+          class="arrow-left"
+          src="./soomgo_source/화살표왼쪽.svg"
+          alt="화살표왼쪽"
+        />
       </section>
       <!--  -->
       <section id="app-soomgo">
@@ -452,44 +636,64 @@
       <!--  -->
       <section id="cleaning-day">
         <h2>쓱싹쓱싹 청소하는 날</h2>
-        <ul class="hot-service-list">
-          <!-- 게시물 -->
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/청소하는날1.webp"
-              alt="게시물1"
-              width="228px"
-            />
-            <div class="hot-text">정리수납 컨설팅</div>
-          </a>
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/청소하는날2.webp"
-              alt="게시물2"
-              width="228px"
-            />
-            <div class="hot-text">에어컨 청소</div>
-          </a>
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/청소하는날3.webp"
-              alt="게시물3"
-              width="228px"
-            />
-            <div class="hot-text">이사/입주 청소업체</div>
-          </a>
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/청소하는날4.webp"
-              alt="게시물4"
-              width="228px"
-            />
-            <div class="hot-text">세탁기 청소</div>
-          </a>
+        <ul class="cleaning-day-list">
+          <div class="cleaning-day-imgcontainer">
+            <!-- 게시물 -->
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/청소하는날1.webp"
+                alt="게시물1"
+                width="228px"
+              />
+              <div class="hot-text">정리수납 컨설팅</div>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/청소하는날2.webp"
+                alt="게시물2"
+                width="228px"
+              />
+              <div class="hot-text">에어컨 청소</div>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/청소하는날3.webp"
+                alt="게시물3"
+                width="228px"
+              />
+              <div class="hot-text">이사/입주 청소업체</div>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/청소하는날4.webp"
+                alt="게시물4"
+                width="228px"
+              />
+              <div class="hot-text">세탁기 청소</div>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/청소하는날5.webp"
+                alt="게시물4"
+                width="228px"
+              />
+              <div class="hot-text">짐 보관</div>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/청소하는날6.webp"
+                alt="게시물4"
+                width="228px"
+              />
+              <div class="hot-text">거주 청소업체</div>
+            </a>
+          </div>
         </ul>
         <img
           class="arrow-right"
@@ -533,37 +737,86 @@
       <section id="gosu-story">
         <h2>숨고 이야기</h2>
 
-        <ul class="hot-service-list">
-          <!-- 게시물 -->
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/숨은이야기 (1).png"
-              alt="게시물1"
-              width="310px"
-            />
-            <div class="hot-text">
-              동양인 최초 국제콩쿠르 우승! 기타 레슨 김승원 고수
-            </div>
-          </a>
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/숨은이야기 (2).png"
-              alt="게시물2"
-              width="310px"
-            />
-            <p class="hot-text">EP11 퍼스털컬러&골격 진단하러 다녀오겠숨니다</p>
-          </a>
-          <a href="#">
-            <img
-              class="img-round"
-              src="./soomgo_source/숨은이야기 (3).png"
-              alt="게시물3"
-              width="310px"
-            />
-            <p class="hot-text">EP03 댄스스포츠 레슨 조소휘 고수</p>
-          </a>
+        <ul class="gosu-story-list">
+          <div class="story-imgcontainer">
+            <!-- 게시물 -->
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨은이야기 (1).png"
+                alt="게시물1"
+                width="310px"
+              />
+              <div class="hot-text">
+                동양인 최초 국제콩쿠르 우승! 기타 레슨 김승원 고수
+              </div>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨은이야기 (2).png"
+                alt="게시물2"
+                width="310px"
+              />
+              <p class="hot-text">
+                EP11 퍼스털컬러&골격 진단하러 다녀오겠숨니다
+              </p>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨은이야기 (3).png"
+                alt="게시물3"
+                width="310px"
+              />
+              <p class="hot-text">EP03 댄스스포츠 레슨 조소휘 고수</p>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨은이야기 (4).png"
+                alt="게시물3"
+                width="310px"
+              />
+              <p class="hot-text">EP10 이사 청소하러 다녀오겠숨니다</p>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨은이야기 (5).png"
+                alt="게시물3"
+                width="310px"
+              />
+              <p class="hot-text">EP09 베이킹 레슨하러 다녀오겠숨니다</p>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨은이야기 (6).png"
+                alt="게시물3"
+                width="310px"
+              />
+              <p class="hot-text">EP02 OPlc과외 정희훈 고수</p>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨은이야기 (7).png"
+                alt="게시물3"
+                width="310px"
+              />
+              <p class="hot-text">EP08 와인 레슨하러 다녀오겠숨니다</p>
+            </a>
+            <a href="#">
+              <img
+                class="img-round"
+                src="./soomgo_source/숨은이야기 (8).png"
+                alt="게시물3"
+                width="310px"
+              />
+              <p class="hot-text">EP01 수제악기 제작 김병철 고수</p>
+            </a>
+          </div>
         </ul>
         <img
           class="arrow-right"
