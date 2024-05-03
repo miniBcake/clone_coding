@@ -71,7 +71,7 @@ let slideImg = document.querySelectorAll(".imglong");
 let prevBtn = document.querySelector("#main-banner .arrow-left");
 let nextBtn = document.querySelector("#main-banner .arrow-right");
 
-let slideWidth = 972;
+let slideWidth = 970;
 let currentIdx = 0;
 let slideCnt = slideImg.length;
 
