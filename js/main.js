@@ -306,36 +306,47 @@ let dot3 = document.querySelector(".dot3");
 
 checkEnd_new();
 
-slideBox_new.style.left = 0;
+console.log(currentIdx_new);
 
-//다음 버튼 클릭 시 발생하는 이벤트
-nextBtn_new.addEventListener("click", () => {
-  currentIdx_new++;
-  slideBox_new.style.left = -(currentIdx_new * slideWidth_new) + "px";
-  slideBox_new.style.transition = "0.3s ease";
-  checkEnd_new();
-});
+slideBox_new.style.left = 0;
 
 //이전 버튼 클릭 시 발생하는 이벤트
 prevBtn_new.addEventListener("click", () => {
-  currentIdx_new--;
-  checkEnd_new();
-  slideBox_new.style.left = -(currentIdx_new * slideWidth_new) + "px";
-  slideBox_new.style.transition = "0.3s ease";
+    currentIdx_new--;
+    console.log(currentIdx_new);
+    checkEnd_new();
+    slideBox_new.style.left = -(currentIdx_new * slideWidth_new) + "px";
+    console.log("이전버튼" + currentIdx_new * slideWidth_new);
+    slideBox_new.style.transition = "0.3s ease";
+
+});
+
+//다음 버튼 클릭 시 발생하는 이벤트
+nextBtn_new.addEventListener("click", () => {
+    currentIdx_new++;
+    console.log(currentIdx_new);
+    slideBox_new.style.left = -(currentIdx_new * slideWidth_new) + "px";
+    console.log("다음버튼" + currentIdx_new * slideWidth_new);
+    slideBox_new.style.transition = "0.3s ease";
+    checkEnd_new();
 });
 
 //슬라이드끝에 도달하면 색변환
 function checkEnd_new() {
   if (currentIdx_new <= 0) {
     prevBtn_new.style.color = "#dbdbdb";
+    prevBtn_new.style.pointerEvents = "none";
   } else {
     prevBtn_new.style.color = "#737373";
+    prevBtn_new.style.pointerEvents = "all";
   }
 
   if (currentIdx_new >= slideCnt_new - 1) {
     nextBtn_new.style.color = "#dbdbdb";
+    nextBtn_new.style.pointerEvents = "none";
   } else {
     nextBtn_new.style.color = "#737373";
+    nextBtn_new.style.pointerEvents = "all";
   }
 
   //dot 색 변환
